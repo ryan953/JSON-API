@@ -270,14 +270,11 @@ class ServerResponseComponent extends Object {
 	 * @return bool
 	 */
 	public function setMethodSuccess($success = null, $message = null) {
-		if (!$success) {
-			return false;
-		}
 		$this->methodSuccess = $success;
 		if ($message) {
 			$this->responseMessage = $message;
 		}
-		return true;
+		return $success;
 	}
 	
 	/**
