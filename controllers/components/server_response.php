@@ -265,11 +265,11 @@ class ServerResponseComponent extends Object {
 	 * setting responseMessage property as well.
 	 * 
 	 * @access public
-	 * @param int $success
+	 * @param bool $success
 	 * @param string $message
 	 * @return bool
 	 */
-	public function setMethodSuccess($success = null, $message = null) {
+	public function setMethodSuccess($success, $message = null) {
 		$this->methodSuccess = $success;
 		if ($message) {
 			$this->responseMessage = $message;
